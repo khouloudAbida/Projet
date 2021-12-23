@@ -1,0 +1,66 @@
+<h3>
+    <i>Ajout avec succés</i>
+    {{message}}
+</h3>
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-lg-12 col-sm-12 col-xs-12">
+
+            <h4 class="mt-4 mb-4"> Etudiant Form</h4>
+            <form>
+                <fieldset>
+                    <div class="form-group">
+
+                        <label for="matetu"> Matricule </label>
+                        <input type="text" name="matetu" id="matetu" [(ngModel)]="etudiant.matricule"
+                            class="form-control" placeholder="saisir votre matricule SVP" required>
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="nometu"> Nom </label>
+                        <input type="text" name="nometu" id="nometu" [(ngModel)]="etudiant.nom" class="form-control"
+                            placeholder="saisir votre nom SVP" required>
+                    </div>
+                    <div class="form-group">
+
+                        <label for="prenometu"> Prenom </label>
+                        <input type="text" name="prenometu" id="prenometu" [(ngModel)]="etudiant.prenom"
+                            class="form-control" placeholder="saisir votre prenom SVP" required>
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="etatcietu"> etat civil </label>
+                        <input type="text" name="etatCiviletu" id="etatCiviletu" [(ngModel)]="etudiant.etatCivil"
+                            class="form-control" placeholder="saisir votre etat Civil SVP" required>
+                    </div>
+                    <div class="form-group">
+
+                        <label for="ageetu"> Age </label>
+                        <input type="number" name="age" id="age" [(ngModel)]="etudiant.age" class="form-control"
+                            placeholder="saisir votre age SVP" required>
+                    </div>
+                    <div class="form-group">
+
+                        <label for="teletu"> Tel </label>
+                        <input type="text" name="teletu" id="teletu" [(ngModel)]="etudiant.tel" class="form-control"
+                            placeholder="saisir votre tel SVP" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="submit" name="submit" class="btn btn-success" value="enregistrer"
+                            (click)="EtudiantNew()">
+                    </div>
+
+                </fieldset>
+
+
+
+            </form>
+        </div>
+    </div>
+</div>

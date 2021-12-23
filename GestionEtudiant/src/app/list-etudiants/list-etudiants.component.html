@@ -1,0 +1,39 @@
+<div class="container">
+
+    <div class="col-lg-12 col-sm-12 col-xs-12">
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+
+                    <td> Matricule </td>
+                    <td> Nom </td>
+                    <td> Prenom </td>
+                    <td> Etat Civil </td>
+                    <td> Age </td>
+                    <td> Tel </td>
+
+                </tr>
+            </thead>
+
+
+            <tbody>
+                <tr *ngFor=" let etu of etudiant">
+
+                    <td> {{etu.matricule}} </td>
+                    <td> {{etu.nom}} </td>
+                    <td> {{etu.prenom}} </td>
+                    <td> {{etu.etatCivil}} </td>
+                    <td> {{etu.age}} </td>
+                    <td> {{etu.tel}} </td>
+
+                </tr>
+
+            </tbody>
+
+
+
+        </table>
+    </div>
+
+</div>
